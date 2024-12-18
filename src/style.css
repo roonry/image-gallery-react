@@ -1,19 +1,28 @@
 .nav{
-    background-color: blue;
-    color: white;
-    padding: 10px;
+    color: black;
     text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 10px;
     text-align: center;
+    gap: 10px;
 }
 
+@media (min-width: 768px) {
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+    
+
+
 .imges{
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     border-radius: 10px;
 }
